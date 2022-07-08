@@ -3,11 +3,11 @@
 const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'),
       circles = document.getElementsByClassName('circle'),
-      hearts = document.querySelectorAll(".heart"),
+      hearts = document.querySelectorAll('.heart'),
       oneHeart = document.querySelector('.heart'),
       wrapper = document.querySelector('.wrapper');
 
-//console.dir(box);
+// console.dir(box);
 // box.style.backgroundColor = 'blue';
 // box.style.width = '500px';
 
@@ -28,8 +28,8 @@ const div = document.createElement('div');
 //const text = document.createTextNode('тут был я');
 div.classList.add('black');
 // document.querySelector('.wrapper').append(div);
-//document.body.append(div);
-// wrapper.append(div);
+// document.body.append(div);
+wrapper.append(div);
 // wrapper.prepend(div);
 
 // hearts[0].before(div);
@@ -39,3 +39,6 @@ div.classList.add('black');
 
 // hearts[0].replaceWith(circles[0]);
 
+div.innerHTML = '<h1>Hello,  sdgadsfg sdfagfadsg adfgadsfgfworld</h1>';
+// div.textContent = "Hwllo";
+div.insertAdjacentHTML("beforebegin", '<h2>fegdfgsdfbg</h2>');
